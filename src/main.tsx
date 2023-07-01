@@ -1,21 +1,29 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom/client"
-import Menu from "./routes/Menu"
-import ErrorPage from "./ErrorPage"
-import Game from "./routes/Game"
+import * as Pages from './routes/Exports'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import "./index.css"
+// import "./main.scss"
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Menu />,
-        errorElement: <ErrorPage />,
+        element: <Pages.Menu />,
+        errorElement: <Pages.ErrorPage />,
     },
     {
         path: "/game",
-        element: <Game />,
-        errorElement: <ErrorPage />,
+        element: <Pages.Game />,
+        errorElement: <Pages.ErrorPage />,
+    },
+    {
+        path: "/lobby",
+        element: <Pages.Lobby />,
+        errorElement: <Pages.ErrorPage />,
+    },
+    {
+        path: "/debug",
+        element: <Pages.Debug />,
+        errorElement: <Pages.ErrorPage />,
     },
 ])
 

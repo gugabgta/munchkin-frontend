@@ -1,0 +1,50 @@
+// @use "variables" as *;
+
+.Menu {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("src/assets/images/munchkin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: $primary-color;
+    font-family: $font-stack;
+    text-align: center;
+}
+
+.button-collumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button {
+    width: 200px;
+    height: 50px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 2px solid $c4;
+    background-color: $c2;
+    color: $c1;
+    font-family: $font-stack;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.menu-button:hover {
+    background-color: $c3;
+    color: $background;
+    transition: 0.5s;
+}
