@@ -18,14 +18,14 @@
     text-align: center;
 }
 
-.button-collumn {
+.Menu .button-collumn {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.menu-button {
+.Menu .menu-button {
     width: 200px;
     height: 50px;
     margin: 15px;
@@ -43,7 +43,7 @@
     line-height: 50px;
 }
 
-.menu-button:hover {
+.Menu .menu-button:hover {
     background-color: $c3;
     color: $background;
     transition: 0.5s;
